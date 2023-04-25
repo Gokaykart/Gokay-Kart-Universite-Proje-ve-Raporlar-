@@ -1,0 +1,25 @@
+/COM,ANSYS RELEASE 2019 R2           BUILD 19.4      UP20190416       18:30:27
+
+ *** WARNING ***                         CP =       0.406   TIME= 18:30:28
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.438   TIME= 18:30:28
+ Material number 6 (used by element 17468) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =       2.156   TIME= 18:30:30
+ Material number 6 (used by element 17468) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =       3.156   TIME= 18:30:30
+ Material number 6 (used by element 17468) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =       4.109   TIME= 18:30:31
+ Material number 6 (used by element 17468) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          

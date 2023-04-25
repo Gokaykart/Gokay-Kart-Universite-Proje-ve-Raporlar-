@@ -1,0 +1,854 @@
+
+ ANSYS Mechanical Enterprise                       
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS 2019 R2          LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2019 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2019 R2 
+     
+ Point Releases and Patches installed:   
+     
+ ANSYS, Inc. Products 2019 R2
+ SpaceClaim 2019 R2  
+ AIM 2019 R2 
+ Live (includes SpaceClaim) 2019 R2  
+ Autodyn 2019 R2 
+ LS-DYNA 2019 R2 
+ CFX (includes CFD-Post) 2019 R2 
+ Chemkin 2019 R2 
+ EnSight 2019 R2 
+ FENSAP-ICE 2019 R2  
+ Fluent (includes CFD-Post) 2019 R2  
+ Forte 2019 R2   
+ Polyflow (includes CFD-Post) 2019 R2
+ TurboGrid 2019 R2   
+ ICEM CFD 2019 R2
+ Aqwa 2019 R2
+ Mechanical Products 2019 R2 
+ Additive 2019 R2
+ Icepak (includes CFD-Post) 2019 R2  
+ Remote Solve Manager Standalone Services 2019 R2
+ Viewer 2019 R2  
+ ACIS Geometry Interface 2019 R2 
+ AutoCAD Geometry Interface 2019 R2  
+ Catia, Version 4 Geometry Interface 2019 R2 
+ Catia, Version 6 Geometry Interface 2019 R2 
+ Creo Elements/Direct Modeling Geometry Interface 2019 R2
+ Creo Parametric Geometry Interface 2019 R2  
+ Inventor Geometry Interface 2019 R2 
+ JTOpen Geometry Interface 2019 R2   
+ NX Geometry Interface 2019 R2   
+ Parasolid Geometry Interface  2019 R2   
+ Solid Edge Geometry Interface 2019 R2   
+ SOLIDWORKS Geometry Interface 2019 R2   
+ ANSYS, Inc. License Manager 2019 R2 
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     2 CORES REQUESTED
+  INPUT FILE NAME              = C:\Users\gokay\Desktop\kml\_ProjectScratch\Scr3EC0\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\gokay\Desktop\kml\_ProjectScratch\Scr3EC0\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2019 R2              BUILD= 19.4      UP20190416   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  18:30:39  JAN 18, 2023 CP=      0.172
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.234   TIME= 18:30:39
+ The /CONFIG,NOELDB command is not valid in a Distributed ANSYS          
+ solution.  Command is ignored.                                          
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  18.5108333    
+
+ TITLE= 
+ kamil2--Static Structural (B5)                                                
+
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\gokay\Desktop\kml\_ProjectScratch\Scr3EC0\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\gokay\Desktop\kml\kamil2_files\dp0\SYS-1\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\gokay\Desktop\kml\kamil2_files\user_files\
+ --- Data in consistent MKS units. See Solving Units in the help system for more
+
+ MKS UNITS SPECIFIED FOR INTERNAL    
+  LENGTH        (l)  = METER (M)
+  MASS          (M)  = KILOGRAM (KG)
+  TIME          (t)  = SECOND (SEC)
+  TEMPERATURE   (T)  = CELSIUS (C)
+  TOFFSET            = 273.0
+  CHARGE        (Q)  = COULOMB
+  FORCE         (f)  = NEWTON (N) (KG-M/SEC2)
+  HEAT               = JOULE (N-M)
+
+  PRESSURE           = PASCAL (NEWTON/M**2)
+  ENERGY        (W)  = JOULE (N-M)
+  POWER         (P)  = WATT (N-M/SEC)
+  CURRENT       (i)  = AMPERE (COULOMBS/SEC)
+  CAPACITANCE   (C)  = FARAD
+  INDUCTANCE    (L)  = HENRY
+  MAGNETIC FLUX      = WEBER
+  RESISTANCE    (R)  = OHM
+  ELECTRIC POTENTIAL = VOLT
+
+ INPUT  UNITS ARE ALSO SET TO MKS 
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2019 R2          19.4     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
+
+ 20120530  VERSION=WINDOWS x64   18:30:39  JAN 18, 2023 CP=      0.234
+
+ kamil2--Static Structural (B5)                                                
+
+
+
+          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 "Solid" ***********
+ *********** Elements for Body 3 "Solid" ***********
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Create Contact "Contact Region" ***********
+             Real Constant Set For Above Contact Is 5 & 4
+ *********** Send Named Selection as Node Component ***********
+ *********** Start Creating Assist Nodes For Crack Calculation ***********
+ *********** Done Creating Assist Nodes For Crack Calculation ***********
+ *********** Fixed Supports ***********
+ ******* Constant Zero Displacement Z *******
+ *********** Define Pressure Using Surface Effect Elements ***********
+ *********** Define Pressure Using Surface Effect Elements ***********
+ *********** Define Pressure Using Surface Effect Elements ***********
+ *********** Define Pressure Using Surface Effect Elements ***********
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.391
+
+
+ --- Number of total nodes = 46232
+ --- Number of contact elements = 688
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 9421
+ --- Number of condensed parts = 0
+ --- Number of total elements = 10109
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  18.5108333    
+ ****************************************************************************
+ *************************    SOLUTION       ********************************
+ ****************************************************************************
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ PERFORM A STATIC ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ USE SPARSE MATRIX DIRECT SOLVER
+
+ CONTACT INFORMATION PRINTOUT LEVEL       1
+
+ DO NOT COMBINE ELEMENT MATRIX FILES (.emat) AFTER DISTRIBUTED PARALLEL SOLUTION
+
+ DO NOT COMBINE ELEMENT SAVE DATA FILES (.esav) AFTER DISTRIBUTED PARALLEL SOLUTION
+ *********** Start Sending CINT Commands For All Cracks ***********
+
+ PARAMETER _IASSISTNODE =     46232.00000    
+
+ PARAMETER _SIFS =     1.000000000    
+
+  START CRACK INTEGRATION DATA SET    1
+
+  SET CINT TYPE TO SIFS
+
+  COMPONENT SELECTION_2
+      DESIGNATES CRACK EXTENSION NODES FOR SET    1
+
+  SET NUMBER OF CONTOURS FOR CRACK INTEGRATION SET    1 TO 6
+
+  ASSIGN CRACK SURFACE NORMAL FOR SET 1
+      TO COORDINATE SYSTEM 0 Y DIRECTION
+
+ PARAMETER _JINT =     2.000000000    
+
+  START CRACK INTEGRATION DATA SET    2
+
+  SET CINT TYPE TO JINT
+
+  COMPONENT SELECTION_2
+      DESIGNATES CRACK EXTENSION NODES FOR SET    2
+
+  SET NUMBER OF CONTOURS FOR CRACK INTEGRATION SET    2 TO 6
+
+  ASSIGN CRACK SURFACE NORMAL FOR SET 2
+      TO COORDINATE SYSTEM 0 Y DIRECTION
+ *********** Done Sending CINT Commands For All Cracks ***********
+
+ NLDIAG: Nonlinear diagnostics CONT option is set to ON. 
+         Writing frequency : each ITERATION.
+
+ DO NOT SAVE ANY RESTART FILES AT ALL
+ ****************************************************
+ ******************* SOLVE FOR LS 1 OF 1 ****************
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE         6 TO          6 STEP          1
+
+         20  ELEMENTS (OF      10109  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+         85 NODES (OF      46232  DEFINED) SELECTED FROM
+       20 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ GENERATE SURFACE LOAD PRES ON SURFACE DEFINED BY ALL SELECTED NODES
+ VALUES= -50000000.0      0.00000000    
+
+ NUMBER OF PRES ELEMENT FACE LOADS STORED =         20
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE         7 TO          7 STEP          1
+
+         84  ELEMENTS (OF      10109  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+        341 NODES (OF      46232  DEFINED) SELECTED FROM
+       84 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ GENERATE SURFACE LOAD PRES ON SURFACE DEFINED BY ALL SELECTED NODES
+ VALUES= -50000000.0      0.00000000    
+
+ NUMBER OF PRES ELEMENT FACE LOADS STORED =         84
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE         8 TO          8 STEP          1
+
+         20  ELEMENTS (OF      10109  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+         85 NODES (OF      46232  DEFINED) SELECTED FROM
+       20 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ GENERATE SURFACE LOAD PRES ON SURFACE DEFINED BY ALL SELECTED NODES
+ VALUES= -50000000.0      0.00000000    
+
+ NUMBER OF PRES ELEMENT FACE LOADS STORED =         20
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE         9 TO          9 STEP          1
+
+         84  ELEMENTS (OF      10109  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+        341 NODES (OF      46232  DEFINED) SELECTED FROM
+       84 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ GENERATE SURFACE LOAD PRES ON SURFACE DEFINED BY ALL SELECTED NODES
+ VALUES= -50000000.0      0.00000000    
+
+ NUMBER OF PRES ELEMENT FACE LOADS STORED =         84
+
+ ALL SELECT   FOR ITEM=NODE COMPONENT=    
+  IN RANGE         1 TO      46232 STEP          1
+
+      46232  NODES (OF      46232  DEFINED) SELECTED BY NSEL  COMMAND.
+
+ ALL SELECT   FOR ITEM=ELEM COMPONENT=    
+  IN RANGE         1 TO      17675 STEP          1
+
+      10109  ELEMENTS (OF      10109  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ ALL SELECT   FOR ITEM=ELEM COMPONENT=    
+  IN RANGE         1 TO      17675 STEP          1
+
+      10109  ELEMENTS (OF      10109  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ PRINTOUT RESUMED BY /GOP
+ *********** Create Imported Load "Imported Body Temperature" ***********
+
+ PRINTOUT RESUMED BY /GOP
+
+ USE       1 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE      1 SUBSTEPS AS A MAXIMUM
+   USE      1 SUBSTEPS AS A MINIMUM
+
+ TIME=  1.0000    
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPPL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPTH ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CINT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_                         ( =   0.00000     )  NE  
+      0                                 ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *** NOTE ***                            CP =       1.016   TIME= 18:30:40
+ The automatic domain decomposition logic has selected the MESH domain   
+ decomposition method with 2 processes per solution.                     
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       1.016   TIME= 18:30:40
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       1.047   TIME= 18:30:40
+ The model data was checked and warning messages were found.             
+  Please review output or errors file (                                  
+ C:\Users\gokay\Desktop\kml\_ProjectScratch\Scr3EC0\file0.err ) for      
+ these warning messages.                                                 
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE    1 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+ ELEMENT TYPE    2 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+ ELEMENT TYPE    3 IS SOLID186. KEYOPT(2)=0 IS SUGGESTED AND HAS BEEN RESET.
+  KEYOPT(1-12)=    0    0    0    0    0    0    0    0    0    0    0    0
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2019 R2          19.4     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
+
+ 20120530  VERSION=WINDOWS x64   18:30:40  JAN 18, 2023 CP=      1.047
+
+ kamil2--Static Structural (B5)                                                
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ  
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   EQUATION SOLVER OPTION. . . . . . . . . . . . .SPARSE             
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** WARNING ***                         CP =       1.047   TIME= 18:30:40
+ Material number 6 (used by element 17468) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** NOTE ***                            CP =       1.047   TIME= 18:30:40
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\gokay\Desktop\kml\_ProjectScratch\Scr3EC0\file0.err ) for      
+ these warning messages.                                                 
+
+ *** NOTE ***                            CP =       1.047   TIME= 18:30:40
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+
+ *** NOTE ***                            CP =       1.109   TIME= 18:30:40
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 4 and contact element type 4 has been set up.  The         
+ companion pair has real constant set ID 5.  Both pairs should have the  
+ same behavior.                                                          
+ *WARNING*: ANSYS has found the contact pairs have similar mesh          
+ patterns.  ANSYS will keep the current pair and deactivate its          
+ companion pair.                                                         
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.46975E+16
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.49814E-03
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.50000E-02
+ Average contact pair depth                   0.49814E-02
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.12453E-02
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.109   TIME= 18:30:40
+ Max.  Initial penetration 1.387778781E-17 was detected between contact  
+ element 17134 and target element 17394.                                 
+ ****************************************
+  
+
+ *** NOTE ***                            CP =       1.109   TIME= 18:30:40
+ Symmetric Deformable- deformable contact pair identified by real        
+ constant set 5 and contact element type 4 has been set up.  The         
+ companion pair has real constant set ID 4.  Both pairs should have the  
+ same behavior.                                                          
+ ANSYS will deactivate the current pair and keep its companion pair,     
+ resulting in asymmetric contact.                                        
+ Linear contact is defined
+ Contact algorithm: Augmented Lagrange method
+ Contact detection at: Gauss integration point
+ Contact stiffness factor FKN                  10.000    
+ The resulting initial contact stiffness      0.46975E+16
+ Default penetration tolerance factor FTOLN   0.10000    
+ The resulting penetration tolerance          0.49881E-03
+ Default opening contact stiffness OPSF will be used.
+ Default tangent stiffness factor FKT          1.0000    
+ Use constant contact stiffness
+ Default Max. friction stress TAUMAX          0.10000E+21
+ Average contact surface length               0.50000E-02
+ Average contact pair depth                   0.49881E-02
+ Default pinball region factor PINB           0.25000    
+ The resulting pinball region                 0.12470E-02
+ Initial penetration/gap is excluded.
+ Bonded contact (always) is defined.
+
+ *** NOTE ***                            CP =       1.109   TIME= 18:30:40
+ Max.  Initial penetration 1.387778781E-17 was detected between contact  
+ element 17229 and target element 17104.                                 
+ ****************************************
+  
+  
+  
+
+ MAKE COMPONENTS FOR CRACK DATA SET        1
+
+ MAKE COMPONENTS FOR CRACK DATA SET        2
+
+  
+  
+     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
+  
+  ...Number of elements: 10109
+  ...Number of nodes:    46232
+  ...Decompose to 2 CPU domains
+  ...Element load balance ratio =     1.034
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    
+   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .     1
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      RSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      EPPL        ALL               
+      EPTH        ALL               
+      CONT        ALL               
+      CINT        ALL               
+
+
+ SOLUTION MONITORING INFO IS WRITTEN TO FILE= file.mntr                                                                                                                                                                                                                                                           
+
+
+
+                         ***********  PRECISE MASS SUMMARY  ***********
+
+   TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
+               Translational mass               |   Coupled translational/rotational mass
+         5.5526        0.0000        0.0000     |     0.0000       0.27763E-01  -0.83289    
+         0.0000        5.5526        0.0000     |   -0.27763E-01    0.0000       0.76968    
+         0.0000        0.0000        5.5526     |    0.83289      -0.76968        0.0000    
+     ------------------------------------------ | ------------------------------------------
+                                                |         Rotational mass (inertia)
+                                                |    0.16677      -0.11545      -0.38484E-02
+                                                |   -0.11545       0.13452      -0.41645E-02
+                                                |   -0.38484E-02  -0.41645E-02   0.30092    
+
+   TOTAL MASS =  5.5526    
+     The mass principal axes coincide with the global Cartesian axes
+
+   CENTER OF MASS (X,Y,Z)=   0.13862       0.15000       0.50000E-02
+
+   TOTAL INERTIA ABOUT CENTER OF MASS
+        0.41698E-01  -0.57403E-10   0.11669E-09
+       -0.57403E-10   0.27693E-01  -0.69825E-10
+        0.11669E-09  -0.69825E-10   0.69298E-01
+     The inertia principal axes coincide with the global Cartesian axes
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1  0.146309E-02
+     2  0.648841    
+     3   4.90230    
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 1.739807799E+10 at element 17110.                             
+ Minimum = 27537434.7 at element 5342.                                   
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1       532  SOLID187      0.047   0.000088
+        2      3849  SOLID186      0.359   0.000093
+        3      5040  SOLID186      0.578   0.000115
+        4       240  CONTA174      0.016   0.000065
+        5       240  TARGE170      0.000   0.000000
+        6        20  SURF154       0.000   0.000000
+        7        84  SURF154       0.000   0.000000
+        8        20  SURF154       0.000   0.000000
+        9        84  SURF154       0.000   0.000000
+ Time at end of element matrix formulation CP = 2.671875.                
+
+ DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.
+  Number of equations =      116751,    Maximum wavefront =    435
+
+  Local memory allocated for solver              =    416.608 MB
+  Local memory required for in-core solution     =    399.580 MB
+  Local memory required for out-of-core solution =    148.885 MB
+
+  Total memory allocated for solver              =    822.154 MB
+  Total memory required for in-core solution     =    788.935 MB
+  Total memory required for out-of-core solution =    303.753 MB
+
+ *** NOTE ***                            CP =       3.281   TIME= 18:30:41
+ The Distributed Sparse Matrix Solver is currently running in the        
+ in-core memory mode.  This memory mode uses the most amount of memory   
+ in order to avoid using the hard drive as much as possible, which most  
+ often results in the fastest solution time.  This mode is recommended   
+ if enough physical memory is present to accommodate all of the solver   
+ data.                                                                   
+ curEqn=  47109  totEqn=  59325 Job CP sec=      5.172
+      Factor Done=  51% Factor Wall sec=      1.624 rate=    9180.6 Mflops
+ curEqn=  59325  totEqn=  59325 Job CP sec=      6.625
+      Factor Done= 100% Factor Wall sec=      3.088 rate=    9379.9 Mflops
+ Distributed sparse solver maximum pivot= 2.770506215E+10 at node 28428  
+ UZ.                                                                     
+ Distributed sparse solver minimum pivot= 27407041.9 at node 32949 UX.   
+ Distributed sparse solver minimum pivot in absolute value= 27407041.9   
+ at node 32949 UX.                                                       
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1       532  SOLID187      0.031   0.000059
+        2      3849  SOLID186      0.266   0.000069
+        3      5040  SOLID186      0.328   0.000065
+        4       240  CONTA174      0.016   0.000065
+        6        20  SURF154       0.000   0.000000
+        7        84  SURF154       0.000   0.000000
+        8        20  SURF154       0.000   0.000000
+        9        84  SURF154       0.000   0.000000
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1       532  SOLID187      0.000   0.000000
+        2      3849  SOLID186      0.016   0.000004
+        3      5040  SOLID186      0.031   0.000006
+        4       240  CONTA174      0.000   0.000000
+        6        20  SURF154       0.000   0.000000
+        7        84  SURF154       0.000   0.000000
+        8        20  SURF154       0.000   0.000000
+        9        84  SURF154       0.000   0.000000
+ 
+   CINT CALCULATION FOR CRACK #       1
+        NUMBER OF CONTOURS     6
+        SYMMETRICAL CRACK    NO
+        CRACK PLANE NORMAL   CSYS= 0 AXIS= 2
+        UMM KEY IS           ON
+
+ *** WARNING ***                         CP =      11.469   TIME= 18:30:50
+ Fracture parameter calculation issue: Contour integration for crack 1   
+ shows that some of contours are beyond the FE model and are to be       
+ modified.  Please carefully evaluate the reported contour integral      
+ results.                                                                
+ 
+   CINT CALCULATION FOR CRACK #       2
+        NUMBER OF CONTOURS     6
+        SYMMETRICAL CRACK    NO
+        CRACK PLANE NORMAL   CSYS= 0 AXIS= 2
+        UMM KEY IS           ON
+
+ *** WARNING ***                         CP =      13.859   TIME= 18:30:52
+ Fracture parameter calculation issue: Contour integration for crack 2   
+ shows that some of contours are beyond the FE model and are to be       
+ modified.  Please carefully evaluate the reported contour integral      
+ results.                                                                
+ *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
+ *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
+
+
+ *** ANSYS BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+       28.000 MB WRITTEN ON ELEMENT SAVED DATA FILE: file0.esav
+       45.375 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+        6.562 MB WRITTEN ON RESULTS FILE: file0.rst
+ *************** Write FE CONNECTORS *********
+
+ WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
+ ****************************************************
+ *************** FINISHED SOLVE FOR LS 1 *************
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  18.5144444    
+
+ PRINTOUT RESUMED BY /GOP
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =        14.234
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2019 R2          19.4     ***
+ DISTRIBUTED ANSYS Mechanical Enterprise                       
+
+ 20120530  VERSION=WINDOWS x64   18:30:52  JAN 18, 2023 CP=     14.234
+
+ kamil2--Static Structural (B5)                                                
+
+
+
+          ***** ANSYS RESULTS INTERPRETATION (POST1) *****
+
+ *** NOTE ***                            CP =      14.234   TIME= 18:30:52
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+ Set Encoding of XML File to:ISO-8859-1
+
+ Set Output of XML File to:
+     PARM,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,
+         ,     ,     ,     ,     ,     ,     ,
+
+ DATABASE WRITTEN ON FILE  parm.xml                                                                                                                                                                                                                                                            
+
+ EXIT THE ANSYS POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  CP =        14.234
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  18.5144444    
+
+ PARAMETER _PREPTIME =     0.000000000    
+
+ PARAMETER _SOLVTIME =     13.00000000    
+
+ PARAMETER _POSTTIME =     0.000000000    
+
+ PARAMETER _TOTALTIM =     13.00000000    
+
+ *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.03437121    
+ --- Number of total nodes = 46232
+ --- Number of total elements = 10109
+ --- Element load balance ratio = 1.03437121
+
+ EXIT ANSYS WITHOUT SAVING DATABASE
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          4
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
++--------- D I S T R I B U T E D   A N S Y S   S T A T I S T I C S ------------+
+
+Release: 2019 R2            Build: 19.4       Update: UP20190416   Platform: WINDOWS x64 
+Date Run: 01/18/2023   Time: 18:30     Process ID: 4252
+Operating System: Windows 10  (Build: 19045)
+
+Processor Model: AMD Ryzen 5 3600 6-Core Processor
+
+Compiler: Intel(R) FORTRAN Compiler Version 17.0.6  (Build: 20171215)
+          Intel(R) C/C++ Compiler Version 17.0.6  (Build: 20171215)
+          Intel(R) Math Kernel Library Version 2017.0.3 Product Build 20170413
+
+Number of machines requested            :    1
+Total number of cores available         :   12
+Number of physical cores available      :    6
+Number of processes requested           :    2
+Number of threads per process requested :    1
+Total number of cores requested         :    2 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2018 Update 3 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: dummy.dat
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0             DESKTOP-ORRR9Q3   C:\Users\gokay\Desktop\kml\_ProjectScratch\Scr3EC0
+     1             DESKTOP-ORRR9Q3   C:\Users\gokay\Desktop\kml\_ProjectScratch\Scr3EC0
+ 
+Latency time from master to core     1 =    0.827 microseconds
+ 
+Communication speed from master to core     1 =  4116.35 MB/sec
+
+Total CPU time for main thread                    :       13.2 seconds
+Total CPU time summed for all threads             :       14.3 seconds
+
+Elapsed time spent pre-processing model (/PREP7)  :        0.1 seconds
+Elapsed time spent solution - preprocessing       :        0.3 seconds
+Elapsed time spent computing solution             :       11.8 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Equation solver used                              :            Sparse (symmetric)
+Equation solver computational rate                :       17.9 Gflops
+Equation solver effective I/O rate                :       25.0 GB/sec
+
+Maximum total memory used                         :     1520.0 MB
+Maximum total memory allocated                    :     3136.0 MB
+Total physical memory available                   :         16 GB
+
+Total amount of I/O written to disk               :        0.2 GB
+Total amount of I/O read from disk                :        0.4 GB
+
++------ E N D   D I S T R I B U T E D   A N S Y S   S T A T I S T I C S -------+
+
+
+ *---------------------------------------------------------------------------*
+ |                                                                           |
+ |                       DISTRIBUTED ANSYS RUN COMPLETED                     |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Ansys 2019 R2               Build 19.4         UP20190416     WINDOWS x64 |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Database Requested(-db)  1024 MB    Scratch Memory Requested      1024 MB |
+ | Maximum Database Used      37 MB    Maximum Scratch Memory Used    932 MB |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ |        CP Time      (sec) =         14.328       Time  =  18:30:52        |
+ |        Elapsed Time (sec) =         15.000       Date  =  01/18/2023      |
+ |                                                                           |
+ *---------------------------------------------------------------------------*

@@ -1,0 +1,22 @@
+/COM,ANSYS RELEASE 2019 R2           BUILD 19.4      UP20190416       18:30:39
+
+ *** WARNING ***                         CP =       1.016   TIME= 18:30:40
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       1.047   TIME= 18:30:40
+ Material number 6 (used by element 17468) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =      11.469   TIME= 18:30:50
+ Fracture parameter calculation issue: Contour integration for crack 1   
+ shows that some of contours are beyond the FE model and are to be       
+ modified.  Please carefully evaluate the reported contour integral      
+ results.                                                                
+
+ *** WARNING ***                         CP =      13.859   TIME= 18:30:52
+ Fracture parameter calculation issue: Contour integration for crack 2   
+ shows that some of contours are beyond the FE model and are to be       
+ modified.  Please carefully evaluate the reported contour integral      
+ results.                                                                

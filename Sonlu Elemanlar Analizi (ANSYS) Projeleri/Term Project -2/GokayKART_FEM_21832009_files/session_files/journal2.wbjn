@@ -1,0 +1,147 @@
+# encoding: utf-8
+# 2019 R2
+SetScriptVersion(Version="19.4.159")
+system1 = GetSystem(Name="SYS")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+ClearMessages()
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Update(AllDependencies=True)
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+EngData.EnableFilter(Enable=False)
+favorites1 = EngData.LoadFavoriteItems()
+EngData.EnableFilter()
+library1 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+library2 = EngData.OpenLibrary(
+    Name="Additive Manufacturing Materials",
+    Source="Additive_Manufacturing_Materials.xml")
+library3 = EngData.OpenLibrary(
+    Name="Geomechanical Materials",
+    Source="GeoMechanical_Materials.xml")
+library4 = EngData.OpenLibrary(
+    Name="Composite Materials",
+    Source="Composite_Materials.xml")
+library5 = EngData.OpenLibrary(
+    Name="General Non-linear Materials",
+    Source="General Materials Non-linear.xml")
+library6 = EngData.OpenLibrary(
+    Name="Explicit Materials",
+    Source="Explicit_Materials.xml")
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.ImportMaterial(
+    Name="ZIRCONIUM",
+    Source="Explicit_Materials.xml")
+library7 = EngData.OpenLibrary(
+    Name="Thermal Materials",
+    Source="Thermal_Materials.xml")
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+EngData.EnableFilter(Enable=False)
+matl1.DisplayName = "zır"
+matl1.Delete()
+EngData.EnableFilter()
+library8 = EngData.OpenLibrary(
+    Name="Granta Design Sample Materials",
+    Source="Granta_Design_Typical_Materials.xml")
+matl2 = engineeringData1.ImportMaterial(
+    Name="Zirconia",
+    Source="Granta_Design_Typical_Materials.xml")
+EngData.EnableFilter(Enable=False)
+matlProp1 = matl2.GetProperty(Name="Density")
+matlProp1.SetData(
+    Variables=["Density"],
+    Values=[["4430 [kg m^-3]"]])
+matlProp2 = matl2.GetProperty(Name="Coefficient of Thermal Expansion")
+matlProp2.SetVariableProperty(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    VariableName="Coefficient of Thermal Expansion",
+    Property="Unit",
+    Value="K^-1")
+matlProp2.SetData(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    Variables=["Coefficient of Thermal Expansion"],
+    Values=[["7.27E-06 [K^-1]"]])
+matlProp2.SetData(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    Variables=["Coefficient of Thermal Expansion"],
+    Values=[["7.11E-06 [K^-1]"]])
+matlProp3 = matl2.GetProperty(Name="Elasticity")
+matlProp3.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["117000000000 [Pa]"]])
+matlProp3.SetData(
+    Variables=["Poisson's Ratio"],
+    Values=[["0.25"]])
+matlProp4 = matl2.GetProperty(Name="Thermal Conductivity")
+matlProp4.SetVariableProperty(
+    VariableName="Thermal Conductivity",
+    Property="Unit",
+    Value="W m^-1 K^-1")
+matlProp4.SetData(
+    Variables=["Thermal Conductivity"],
+    Values=[["1.84 [W m^-1 K^-1]"]])
+matlProp4.SetData(
+    Variables=["Thermal Conductivity"],
+    Values=[["2.036 [W m^-1 K^-1]"]])
+EngData.EnableFilter()
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+engineeringDataComponent1 = system1.GetComponent(Name="Engineering Data")
+engineeringDataComponent1.Update(AllDependencies=True)
+EngData.EnableFilter(Enable=False)
+matlProp5 = matl2.GetProperty(Name="Specific Heat")
+matlProp5.SetVariableProperty(
+    VariableName="Specific Heat",
+    Property="Unit",
+    Value="J kg^-1 K^-1")
+matlProp5.SetData(
+    Variables=["Specific Heat"],
+    Values=[["427 [J kg^-1 K^-1]"]])
+matlProp5.SetVariableProperty(
+    VariableName="Specific Heat",
+    Property="Unit",
+    Value="J kg^-1 C^-1")
+matlProp5.SetData(
+    Variables=["Specific Heat"],
+    Values=[["427 [J kg^-1 C^-1]"]])
+matlProp3.SetData(
+    Variables=["Poisson's Ratio"],
+    Values=[["1.3"]])
+matlProp3.SetData(
+    Variables=["Poisson's Ratio"],
+    Values=[["0.25"]])
+engineeringDataComponent1.Update(AllDependencies=True)
+engineeringDataComponent1.Update(AllDependencies=True)
+modelComponent1.Update(AllDependencies=True)
+material1 = engineeringData1.GetMaterial(Name="ZnCO2")
+material1.Delete()
+engineeringDataComponent1.Update(AllDependencies=True)
+modelComponent1.Update(AllDependencies=True)
+geometry1.Exit()
+geometry1.Edit()
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+geometryComponent1.Update(AllDependencies=True)
+modelComponent1.Update(AllDependencies=True)
+geometry1.Edit()
+geometry1.Edit()
+geometryComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+modelComponent1.Refresh()
+model1.Edit()
+Save(Overwrite=True)
