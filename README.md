@@ -1,0 +1,1 @@
+# G-kay-Kart-biversite-Proje-ve-Raporlar-
